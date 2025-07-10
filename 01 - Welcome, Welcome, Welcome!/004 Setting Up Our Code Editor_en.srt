@@ -1,0 +1,624 @@
+1
+00:00:01,000 --> 00:00:04,000
+Now before we can write any code,
+
+2
+00:00:04,000 --> 00:00:08,000
+we need to install and configure a code editor.
+
+3
+00:00:08,000 --> 00:00:12,000
+So a code editor is the main tool for any developer
+
+4
+00:00:12,000 --> 00:00:17,000
+and we use it as the name says to write our actual code.
+
+5
+00:00:18,000 --> 00:00:21,000
+And so let's now go download a code editor.
+
+6
+00:00:21,000 --> 00:00:25,000
+And the one that I advise everyone to use
+
+7
+00:00:25,000 --> 00:00:30,000
+is Visual Studio Code or VS Code for short.
+
+8
+00:00:30,000 --> 00:00:31,000
+So this is in my opinion,
+
+9
+00:00:31,000 --> 00:00:35,000
+the best code editor by far that exists.
+
+10
+00:00:35,000 --> 00:00:38,000
+And that's not just my own opinion.
+
+11
+00:00:38,000 --> 00:00:42,000
+So VS Code is right now by far the most popular
+
+12
+00:00:42,000 --> 00:00:47,000
+and most widely used code editor and that is for a reason.
+
+13
+00:00:47,000 --> 00:00:50,000
+It simply is the best and easiest to use and of course,
+
+14
+00:00:50,000 --> 00:00:52,000
+it is completely free.
+
+15
+00:00:52,000 --> 00:00:56,000
+Now there are alternatives if you don't like VS Code
+
+16
+00:00:56,000 --> 00:00:58,000
+for some reason.
+
+17
+00:00:58,000 --> 00:01:02,000
+So you can use Adam or you can use something like Brackets
+
+18
+00:01:02,000 --> 00:01:06,000
+as well, which is the code editor that I used
+
+19
+00:01:06,000 --> 00:01:09,000
+to teach a previous version of this course.
+
+20
+00:01:09,000 --> 00:01:13,000
+But again, I'm going to use VS Code in this course.
+
+21
+00:01:13,000 --> 00:01:16,000
+And so, I really advise you to follow this course,
+
+22
+00:01:16,000 --> 00:01:20,000
+using the exact same code editor to make everything easier
+
+23
+00:01:20,000 --> 00:01:21,000
+for you to follow.
+
+24
+00:01:21,000 --> 00:01:25,000
+So again, this code editor is completely free
+
+25
+00:01:25,000 --> 00:01:29,000
+and it works on every platform.
+
+26
+00:01:29,000 --> 00:01:32,000
+So just download whatever installer that you need
+
+27
+00:01:32,000 --> 00:01:36,000
+for your own platform, then install of course,
+
+28
+00:01:36,000 --> 00:01:38,000
+that code editor on your computer.
+
+29
+00:01:38,000 --> 00:01:41,000
+And once you're done, come back to this video,
+
+30
+00:01:41,000 --> 00:01:45,000
+so that we can together set it up a little bit,
+
+31
+00:01:45,000 --> 00:01:48,000
+just so that we can get started in the next section.
+
+32
+00:01:49,000 --> 00:01:53,000
+Okay, so I hope that you managed to install VS Code
+
+33
+00:01:53,000 --> 00:01:56,000
+on your system and as you open it up,
+
+34
+00:01:56,000 --> 00:01:59,000
+it should look something like this.
+
+35
+00:01:59,000 --> 00:02:03,000
+Now, the colors should probably all be different,
+
+36
+00:02:03,000 --> 00:02:05,000
+but we will fix that in a second.
+
+37
+00:02:05,000 --> 00:02:07,000
+And maybe this welcome screen also looks different.
+
+38
+00:02:07,000 --> 00:02:09,000
+And maybe this icons here
+
+39
+00:02:09,000 --> 00:02:13,000
+because you might've installed the editor sometime
+
+40
+00:02:13,000 --> 00:02:15,000
+after I recorded this video.
+
+41
+00:02:15,000 --> 00:02:19,000
+But anyway, the main things should still work the same.
+
+42
+00:02:19,000 --> 00:02:24,000
+And so let's actually start by installing a theme.
+
+43
+00:02:24,000 --> 00:02:28,000
+So a theme is basically all the colors that you see
+
+44
+00:02:28,000 --> 00:02:29,000
+are on the screen.
+
+45
+00:02:29,000 --> 00:02:31,000
+And also the color is in the actual code
+
+46
+00:02:31,000 --> 00:02:33,000
+that you're going to write.
+
+47
+00:02:33,000 --> 00:02:37,000
+Okay, now you don't need to install a theme.
+
+48
+00:02:37,000 --> 00:02:40,000
+So you can simply change one of the themes
+
+49
+00:02:40,000 --> 00:02:43,000
+that is already included in VS Code.
+
+50
+00:02:43,000 --> 00:02:47,000
+So just click down here on this icon and then color theme.
+
+51
+00:02:47,000 --> 00:02:51,000
+And then here, you can try one of these out.
+
+52
+00:02:51,000 --> 00:02:53,000
+And so if you like one of them,
+
+53
+00:02:53,000 --> 00:02:55,000
+you can simply keep that one.
+
+54
+00:02:55,000 --> 00:02:59,000
+But as you see, the theme that I have is this monokai pro
+
+55
+00:02:59,000 --> 00:03:04,000
+and this one was not included by default by VS Code.
+
+56
+00:03:05,000 --> 00:03:08,000
+And so if you want to install the same theme as I have,
+
+57
+00:03:08,000 --> 00:03:11,000
+then simply come here to this extensions tab
+
+58
+00:03:11,000 --> 00:03:16,000
+and then search for monokai pro.
+
+59
+00:03:17,000 --> 00:03:20,000
+Okay, then it's this first one here.
+
+60
+00:03:20,000 --> 00:03:23,000
+And then you can simply, probably somewhere here,
+
+61
+00:03:23,000 --> 00:03:25,000
+click on download.
+
+62
+00:03:25,000 --> 00:03:29,000
+Now this theme is actually a paid theme that you can buy
+
+63
+00:03:29,000 --> 00:03:33,000
+for about 10 U.S. dollars or so.
+
+64
+00:03:33,000 --> 00:03:36,000
+However, you can actually also use the theme
+
+65
+00:03:36,000 --> 00:03:38,000
+for free forever.
+
+66
+00:03:38,000 --> 00:03:40,000
+It will then just ask you every couple of days
+
+67
+00:03:40,000 --> 00:03:42,000
+for you to buy it.
+
+68
+00:03:42,000 --> 00:03:46,000
+But for me, that has never been a big problem.
+
+69
+00:03:46,000 --> 00:03:49,000
+Now, I just wanted to quickly mention that I'm not
+
+70
+00:03:49,000 --> 00:03:52,000
+in any way affiliated with the theme
+
+71
+00:03:52,000 --> 00:03:55,000
+and that this is not an advertisement.
+
+72
+00:03:55,000 --> 00:03:57,000
+So this is simply the theme that I love
+
+73
+00:03:57,000 --> 00:04:00,000
+and that I use every single day.
+
+74
+00:04:00,000 --> 00:04:02,000
+But of course, you can use a different theme
+
+75
+00:04:02,000 --> 00:04:06,000
+or a theme that you have already been using yourself.
+
+76
+00:04:06,000 --> 00:04:07,000
+But if you like to theme,
+
+77
+00:04:07,000 --> 00:04:11,000
+then you can support the creator or you can use the theme
+
+78
+00:04:11,000 --> 00:04:15,000
+for free or you can, of course also use another theme.
+
+79
+00:04:15,000 --> 00:04:18,000
+And one other theme that is very similar
+
+80
+00:04:18,000 --> 00:04:23,000
+and which actually already comes with VS Code
+
+81
+00:04:23,000 --> 00:04:27,000
+is monokai classic.
+
+82
+00:04:27,000 --> 00:04:29,000
+So it's this one.
+
+83
+00:04:29,000 --> 00:04:32,000
+So the colors here look a little bit different,
+
+84
+00:04:32,000 --> 00:04:35,000
+but the monokai pro theme that I use is actually based
+
+85
+00:04:35,000 --> 00:04:37,000
+on this one.
+
+86
+00:04:37,000 --> 00:04:40,000
+And so therefore, colors are quite similar.
+
+87
+00:04:40,000 --> 00:04:43,000
+And so therefore, this one is also a good pick
+
+88
+00:04:43,000 --> 00:04:46,000
+in case you want to use a very similar theme to mine,
+
+89
+00:04:46,000 --> 00:04:49,000
+but don't want to use monokai pro,
+
+90
+00:04:49,000 --> 00:04:53,000
+but I'm gonna set it back to monokai pro now.
+
+91
+00:04:53,000 --> 00:04:56,000
+And so that's it about the theme.
+
+92
+00:04:56,000 --> 00:04:58,000
+And so, let's not move on and also talk
+
+93
+00:04:58,000 --> 00:05:01,000
+about VS Code settings.
+
+94
+00:05:01,000 --> 00:05:04,000
+And so here, I'm going to show you a couple of settings
+
+95
+00:05:04,000 --> 00:05:06,000
+that I'm using in the course videos
+
+96
+00:05:06,000 --> 00:05:08,000
+and that you should probably use as well
+
+97
+00:05:08,000 --> 00:05:11,000
+to make it easier for you to follow the videos
+
+98
+00:05:11,000 --> 00:05:15,000
+and also to code on your own later on.
+
+99
+00:05:15,000 --> 00:05:18,000
+So the first setting is this auto save setting
+
+100
+00:05:18,000 --> 00:05:22,000
+that you should set to on focus change.
+
+101
+00:05:22,000 --> 00:05:25,000
+Okay and so, what this will do is that whenever
+
+102
+00:05:25,000 --> 00:05:30,000
+you leave the code editor or you go to some other file,
+
+103
+00:05:30,000 --> 00:05:34,000
+then it will automatically save that file without you having
+
+104
+00:05:34,000 --> 00:05:35,000
+to do anything.
+
+105
+00:05:35,000 --> 00:05:37,000
+And so, that's very helpful.
+
+106
+00:05:37,000 --> 00:05:40,000
+Now, if this isn't showing up here for you,
+
+107
+00:05:40,000 --> 00:05:44,000
+up here, you can simply search for everything.
+
+108
+00:05:44,000 --> 00:05:48,000
+So you can simply search auto save like this.
+
+109
+00:05:48,000 --> 00:05:52,000
+And then again, change it to unfocused change.
+
+110
+00:05:52,000 --> 00:05:55,000
+Then you could also change the font size,
+
+111
+00:05:55,000 --> 00:05:57,000
+but that's not really important for you.
+
+112
+00:05:57,000 --> 00:06:01,000
+Then another one is this multi cursor modifier.
+
+113
+00:06:01,000 --> 00:06:04,000
+And this one sounds a bit weird,
+
+114
+00:06:04,000 --> 00:06:08,000
+but you can simply set it to control command.
+
+115
+00:06:08,000 --> 00:06:10,000
+Or you can leave it at alt.
+
+116
+00:06:10,000 --> 00:06:11,000
+So just when you need it,
+
+117
+00:06:11,000 --> 00:06:14,000
+just know which of the two you selected.
+
+118
+00:06:14,000 --> 00:06:18,000
+But for now, again, this is not important.
+
+119
+00:06:18,000 --> 00:06:20,000
+I will only start using it a bit later.
+
+120
+00:06:20,000 --> 00:06:24,000
+Then I also have the word wrap turned on,
+
+121
+00:06:24,000 --> 00:06:27,000
+but again, that's not that important.
+
+122
+00:06:27,000 --> 00:06:32,000
+Okay, so I think those are actually the most important ones.
+
+123
+00:06:33,000 --> 00:06:36,000
+There's just another one that you need to change.
+
+124
+00:06:36,000 --> 00:06:41,000
+And that is called format on save.
+
+125
+00:06:42,000 --> 00:06:45,000
+All right, so just turn this one here on,
+
+126
+00:06:45,000 --> 00:06:50,000
+which says that a formatter must be available and by now,
+
+127
+00:06:50,000 --> 00:06:52,000
+it is not, but in one of the next sections,
+
+128
+00:06:52,000 --> 00:06:54,000
+we will actually install a formatter
+
+129
+00:06:54,000 --> 00:06:57,000
+to automatically format our code.
+
+130
+00:06:57,000 --> 00:07:01,000
+And by then, this setting here must be turned on.
+
+131
+00:07:01,000 --> 00:07:06,000
+Okay and that's actually it for this lecture already.
+
+132
+00:07:06,000 --> 00:07:09,000
+Now, just notice that I'm working on a Mac here,
+
+133
+00:07:09,000 --> 00:07:12,000
+but everything will work exactly the same on Windows
+
+134
+00:07:12,000 --> 00:07:14,000
+and on Linux.
+
+135
+00:07:14,000 --> 00:07:18,000
+So this VS Code editor as I mentioned earlier,
+
+136
+00:07:18,000 --> 00:07:21,000
+works just the same on all the platforms.
+
+137
+00:07:21,000 --> 00:07:26,000
+Now, just one final and small adjustment that we can make,
+
+138
+00:07:26,000 --> 00:07:27,000
+which I just remembered
+
+139
+00:07:27,000 --> 00:07:32,000
+is that besides changing the main color theme,
+
+140
+00:07:32,000 --> 00:07:35,000
+we can also change the theme of the file icons.
+
+141
+00:07:35,000 --> 00:07:38,000
+And so again, if you want your VS Code
+
+142
+00:07:38,000 --> 00:07:40,000
+to look exactly the same as mine,
+
+143
+00:07:40,000 --> 00:07:45,000
+then you can select these Seti icons here.
+
+144
+00:07:45,000 --> 00:07:49,000
+So by default, I think it should be this minimal,
+
+145
+00:07:49,000 --> 00:07:52,000
+but I prefer these ones here.
+
+146
+00:07:52,000 --> 00:07:54,000
+And so, by selecting this one here,
+
+147
+00:07:54,000 --> 00:07:55,000
+then your code editor
+
+148
+00:07:55,000 --> 00:07:59,000
+will probably look exactly the same as mine.
+
+149
+00:07:59,000 --> 00:08:03,000
+All right and with that, we are actually ready to move on.
+
+150
+00:08:03,000 --> 00:08:06,000
+Just make sure that you also have the latest version
+
+151
+00:08:06,000 --> 00:08:08,000
+of Google Chrome installed on your computer
+
+152
+00:08:08,000 --> 00:08:11,000
+because that is going to be the browser
+
+153
+00:08:11,000 --> 00:08:14,000
+in which we will be testing our code.
+
+154
+00:08:14,000 --> 00:08:15,000
+All right, but with that,
+
+155
+00:08:15,000 --> 00:08:18,000
+we are now really done with this video.
+
+156
+00:08:18,000 --> 00:08:20,000
+And so, I'll see you in the next one.
+
