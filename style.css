@@ -1,4 +1,4 @@
-* {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -106,75 +106,110 @@
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(135deg, rgba(0,122,61,0.85), rgba(0,122,61,0.65)), url('https://source.unsplash.com/random/1920x1080?charity');
+            background: url('https://media.istockphoto.com/id/1306693069/photo/concept-of-zakat-in-islam-religion-selective-focus-of-money-rice-koran-and-prayer-beads-on.jpg?s=612x612&w=0&k=20&c=NAhQZd-Vzj_mlk_S0rxj9HFA2wsGWUOvHI-4pZSU2Z8=') no-repeat center center fixed;
             background-size: cover;
             background-position: center;
             display: flex;
             align-items: center;
+            justify-content: center;
             padding: 0 5%;
             position: relative;
             z-index: 1;
         }
 
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 2;
+        }
+
         .hero-content {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             max-width: 1200px;
-            align-items: center;
-            gap: 2rem;
-            overflow: visible;
+            text-align: center;
+            z-index: 3;
+            position: relative;
+            padding: 1rem;
         }
 
         .hero-text {
-            flex: 1;
-            min-width: 300px;
             color: #fff;
-            text-align: left;
             z-index: 10;
-            position: relative;
+            max-width: 95%;
         }
 
         .hero-text h1 {
-            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-size: clamp(1.5rem, 5vw, 3rem);
             font-weight: 800;
-            margin-bottom: 1.5rem;
-            color: #fff;
+            margin-bottom: 1rem;
+            color: #FFD700;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.3;
         }
 
         .hero-text p {
-            font-size: clamp(1rem, 3vw, 1.4rem);
-            margin-bottom: 2rem;
+            font-size: clamp(0.9rem, 3vw, 1.3rem);
+            margin-bottom: 1.5rem;
             opacity: 0.9;
+            line-height: 1.4;
+        }
+
+        .hero-text h1.typing::after,
+        .hero-text p.typing::after {
+            content: '';
+            display: inline-block;
+            width: 0.15em;
+            height: 1em;
+            background: #FFD700;
+            vertical-align: middle;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        .hero-text p.typing::after {
+            background: #fff;
+        }
+
+        @keyframes blink-caret {
+            from, to { opacity: 0; }
+            50% { opacity: 1; }
         }
 
         .hero-buttons {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
+            justify-content: center;
         }
 
         .btn-primary {
             background: #007A3D;
             color: #fff;
-            padding: 0.8rem clamp(1.5rem, 4vw, 2.5rem);
+            padding: 0.8rem clamp(1.2rem, 3vw, 2rem);
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            font-size: clamp(0.9rem, 2.5vw, 1rem);
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
             transition: background 0.3s ease, transform 0.3s ease;
         }
 
         .btn-secondary {
             border: 2px solid #fff;
             color: #fff;
-            padding: 0.8rem clamp(1.5rem, 4vw, 2.5rem);
+            padding: 0.8rem clamp(1.2rem, 3vw, 2rem);
             border-radius: 8px;
             text-decoration: none;
             background: transparent;
             font-weight: 600;
-            font-size: clamp(0.9rem, 2.5vw, 1rem);
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
             transition: background 0.3s ease, color 0.3s ease;
         }
 
@@ -189,22 +224,7 @@
         }
 
         .hero-image {
-            flex: 1;
-            min-width: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            z-index: 5;
-        }
-
-        .hero-image img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            object-fit: contain;
-            border-radius: 8px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            display: none; /* Hidden as per original code for mobile */
         }
 
         /* Section Styles */
@@ -237,18 +257,23 @@
         }
 
         .mission-vision {
-            display: flex;
-            gap: 1rem;
-            padding: 1.5rem;
-            max-width: 90%;
-            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: clamp(1.5rem, 4vw, 2rem);
+            margin-top: 2rem;
         }
 
-        .mission-vision p {
-            flex: 1;
-            margin: 0;
-            font-size: clamp(0.9rem, 2.5vw, 1rem);
-            color: #2d3748;
+        .mission-vision .card {
+            padding: clamp(1rem, 3vw, 2rem);
+            background: #fff;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .mission-vision .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
         }
 
         /* Zakat & Waqf Section */
@@ -722,26 +747,30 @@
             }
 
             .hero {
-                height: 80vh;
+                height: 100vh;
             }
 
             .hero-content {
-                flex-direction: column;
-                text-align: center;
+                padding: 1rem;
             }
 
             .hero-text {
-                text-align: center;
+                max-width: 95%;
+            }
+
+            .hero-text h1 {
+                font-size: clamp(1.4rem, 4.5vw, 2.2rem);
+                line-height: 1.3;
+            }
+
+            .hero-text p {
+                font-size: clamp(0.8rem, 2.8vw, 1rem);
+                line-height: 1.4;
             }
 
             .hero-buttons {
-                justify-content: center;
                 flex-direction: column;
                 align-items: center;
-            }
-
-            .hero-image img {
-                max-width: 80%;
             }
 
             .about {
@@ -750,9 +779,8 @@
                 align-items: center;
             }
 
-            .mission-vision {
-                flex-direction: column;
-                padding: 1rem;
+            .mission-vision, .steps, .initiatives-grid, .impact-grid, .updates-grid, .eligibility-grid {
+                grid-template-columns: 1fr;
             }
 
             .card-content {
@@ -761,10 +789,6 @@
 
             .connect-content {
                 flex-direction: column;
-            }
-
-            .zakat-waqf, .steps, .initiatives-grid, .impact-grid, .updates-grid, .eligibility-grid {
-                grid-template-columns: 1fr;
             }
 
             .testimonial {
@@ -797,12 +821,34 @@
                 font-size: clamp(1rem, 2.5vw, 1.2rem);
             }
 
-            .hero h1 {
-                font-size: clamp(1.5rem, 5vw, 2rem);
+            .hero {
+                height: 100vh;
+                padding: 0 3%;
             }
 
-            .hero p {
-                font-size: clamp(0.9rem, 3vw, 1.1rem);
+            .hero-content {
+                padding: 0.5rem;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .hero-text h1 {
+                font-size: clamp(1.2rem, 4vw, 1.8rem);
+                line-height: 1.3;
+                margin-bottom: 1rem;
+            }
+
+            .hero-text p {
+                font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+                line-height: 1.4;
+                margin-bottom: 1rem;
+            }
+
+            .btn-primary, .btn-secondary {
+                padding: 0.6rem 1rem;
+                font-size: clamp(0.7rem, 2vw, 0.85rem);
             }
 
             h2 {
@@ -817,10 +863,6 @@
                 max-height: 80px;
             }
 
-            .hero-image img {
-                max-width: 100%;
-            }
-
             .testimonial img {
                 width: 40px;
                 height: 40px;
@@ -829,7 +871,7 @@
 
         /* High-density displays */
         @media (min-resolution: 192dpi) {
-            .logo img, .footer-logo img, .hero-image img, .testimonial img, .card img, .step img, .initiative-item img, .update-item img {
+            .logo img, .footer-logo img, .testimonial img, .card img, .step img, .initiative-item img, .update-item img {
                 image-rendering: crisp-edges;
             }
         }
